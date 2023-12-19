@@ -1,0 +1,240 @@
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+body{
+  background-color: white;
+  font-family: "Raleway";
+}
+
+
+.urls{
+  display: flex;
+  flex-direction: column;
+  margin:auto;
+  width:90%;
+}
+
+.alurl{
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+
+.head{
+  margin:auto;
+  margin-top:10vh;
+}
+
+.shorten{
+  display:flex;
+  justify-content: center;
+}
+
+
+#col2, #col1{
+ word-wrap: break-word;
+ padding-left: 1rem;
+ padding-right: 1rem;
+}
+
+#col3 , #col4, #col1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 20vw); /* Set a fixed width for each column */
+  gap: 10px; /* Add some gap between columns */
+}
+
+/* Define styles for the table cells */
+.grid-item {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.table{
+    margin-bottom: 2vh;
+    display: flex;
+    height:auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+  }
+
+
+ 
+  .tbody tr{
+    border:none;
+  }
+
+.column {
+    border: none;
+    width: 200px;
+    padding: 10px; /* Adjust the padding to add space between columns */
+    box-sizing: border-box;
+ /* Optional: Add a border for better visibility */
+  }
+
+.form{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#url{
+    width:80%;
+    height: 3vh;
+}
+
+
+.form{
+    width: 100vw;
+}
+
+
+
+.btn-btn-primary{
+ margin-left: 2vw;
+ height: 4vh;
+ width:8vw;  
+ border: 0px solid black;
+ background-color: #303cec;
+ color: white;
+ cursor: pointer;
+ border-radius: 10px;
+}
+
+.btn-btn-primary:hover{
+  background-color:#0adc69;
+}
+
+.delete-button:hover{
+  background-color:#0adc69;
+}
+
+.delete-button{
+  height:4vh;
+  cursor: pointer;
+  border-radius: 2px;
+  border: 0px solid black;
+  background-color: #303cec;
+  color: white;
+}
+
+.flash-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:#303cec ;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    z-index: 1000;
+  }
+
+  .progress-bar {
+    height: 5px;
+    background-color: #dfec30;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+  }
+
+/* Add this to your profile.css file or include it in the head of your HTML file */
+
+@keyframes containerAnimation {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  animation: containerAnimation 0.5s ease-in-out; /* Apply the animation */
+}
+
+
+/* Existing styles for the table */
+.table {
+  width: 100%;
+  word-wrap: break-word;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border:none;
+}
+
+
+
+
+
+.table td, .table th {
+  border: 1px solid #000;
+  padding: 8px;
+  text-align: left;
+  height: 5vh;
+}
+/* Add your existing styles here */
+
+@media (max-width: 800px) {
+  /* Add styles specific to screens with a maximum width of 400px */
+
+  .container {
+    animation: none; /* Disable the animation for smaller screens */
+    width: 90%; /* Set the width directly for smaller screens */
+  }
+
+  .table {
+    overflow-x: auto; /* Enable horizontal scrolling for small screens */
+    display: block;
+  }
+
+  .table td, .table th {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  #col2,#col1{
+    word-wrap: break-word;
+   }
+
+  a {
+  color:red;
+  text-wrap: wrap;
+   }
+   
+   #col3 , #col4, #col1{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+
+  /* Add any additional styles specific to smaller screens */
+}
+
